@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery price calcilator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <main class="main-wrapper">
+        <div class="container">
+          <div class="item-container">
+            <div class="set-budget">
+              <h3 id="budget-text">Enter maximum budget</h3>
+              <input
+                type="number"
+                name="maximum"
+                placeholder="Maximum Budget"
+                id="max"
+              />
+            </div>
+
+            <div class="header">
+              <div class="result">
+                <h3>Total:</h3>
+                <h3 id="total">0</h3>
+              </div>
+              <div class="button-wrapper">
+                <button id="add-item">Add Item</button>
+              </div>
+            </div>
+            <div id="all-items">
+              <div class="input-block">
+                <input
+                  type="text"
+                  name="item-name"
+                  placeholder="Enter item name"
+                />
+                <input type="number" name="price" placeholder="Price" />
+                <div class="delete"><i class="fa-solid fa-xmark"></i>x</div>
+              </div>
+              <div class="input-block">
+                <input
+                  type="text"
+                  name="item-name"
+                  placeholder="Enter item name"
+                />
+                <input type="number" name="price" placeholder="Price" />
+                <div class="delete"><i class="fa-solid fa-xmark"></i>x</div>
+              </div>
+              <div class="input-block">
+                <input
+                  type="text"
+                  name="item-name"
+                  placeholder="Enter item name"
+                />
+                <input type="number" name="price" placeholder="Price" />
+                <div class="delete"><i class="fa-solid fa-xmark"></i>x</div>
+              </div>
+            </div>
+            <div class="footer">
+              <a id="get-result" href="#invoice">Generate Invoice</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main class="main-wrapper">
+        <div class="container">
+          <div class="invoice-wrapper">
+            <h2>Grocery List</h2>
+            <div id="invoice"></div>
+          </div>
+        </div>
+      </main>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
