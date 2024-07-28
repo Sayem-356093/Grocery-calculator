@@ -8,7 +8,7 @@ function addNewItem() {
   let html = `<div class="input-block">
                     <input type="text" name="item-name" placeholder="Enter item name">
                     <input type="number" name="price" placeholder="Price">
-                    <div class="delete"><i class="fa-solid fa-xmark"></i>x</div>
+                    <div class="delete"><i class="fa-solid fa-xmark"></i></div>
                 </div>`;
 
   allItems.insertAdjacentHTML("beforeend", html);
